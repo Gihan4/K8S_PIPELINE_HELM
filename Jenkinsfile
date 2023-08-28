@@ -109,7 +109,7 @@ pipeline {
             steps {
                 script {
                     // Sleep for 1 minute
-                    sleep(time: 60, unit: 'SECONDS')
+                    sleep(time: 90, unit: 'SECONDS')
                     
                     def SERVICE_NAME = "flask-service"
         
