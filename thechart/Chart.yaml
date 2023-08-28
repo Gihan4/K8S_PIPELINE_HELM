@@ -1,4 +1,0 @@
--e apiVersion: v2
-name: FlaskX
-version: 1.18.0
-description: A Helm chart for K8S for deploying flask and redis
