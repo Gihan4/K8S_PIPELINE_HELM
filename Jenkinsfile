@@ -5,7 +5,7 @@ pipeline {
         // Define the environment variable with the BUILD NUMBER
         BUILD_NUMBER = "${env.BUILD_NUMBER}"
         DOCKER_IMAGE = "gihan4/helmredis"
-        CHART_DIRECTORY = "./thechart"
+        CHART_DIRECTORY = "./redis_flask/thechart"
         BUCKET_NAME = "helmbucket4"
         CHART_RELEASE = "myflask-release"
     }
