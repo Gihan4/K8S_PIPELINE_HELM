@@ -79,7 +79,7 @@ pipeline {
 
         stage('Connect to Test Cluster') {
             steps {
-                sh 'gcloud container clusters get-credentials autopilot-cluster-test --region us-central1 --project formidable-hold-392607'
+                sh 'gcloud container clusters get-credentials test-cluster --zone us-central1-a --project formidable-hold-392607'
             }
         }
 
@@ -151,7 +151,7 @@ pipeline {
         stage('Connect Production Cluster') {
             steps {
                 echo "connecting to the cluster..."
-                sh 'gcloud container clusters get-credentials autopilot-cluster-production --region us-central1 --project formidable-hold-392607'
+                sh 'gcloud container clusters get-credentials prod-cluster --zone us-central1-a --project formidable-hold-392607'
             }
         }
 
