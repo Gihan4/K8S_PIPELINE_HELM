@@ -137,6 +137,8 @@ pipeline {
                         currentBuild.result = 'FAILURE'
                         return
                     }
+
+                    // more test here ..
                 }
             }
         }
